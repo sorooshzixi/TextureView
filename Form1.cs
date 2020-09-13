@@ -28,21 +28,12 @@ namespace TextureView
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             var fileName = openFileDialog1.FileName;
-         
-          
-
-         //   using (StreamReader reader = new StreamReader(fileStream))
-         //   {
-         //       fileContent = reader.ReadToEnd();
-         //   }
-            
-
-            pictureBox1.Image= Image.FromFile(fileName);
-            
+            pictureBox1.Image= Image.FromFile(fileName);    
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //temp
             folderBrowserDialog1.ShowDialog();
         }
 
